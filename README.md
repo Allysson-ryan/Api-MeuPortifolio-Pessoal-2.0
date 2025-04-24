@@ -1,4 +1,4 @@
-# 🧠 API - Portfólio Pessoal
+# 🧠 API - Meu Portfólio Pessoal
 
 Este repositório contém a API do meu portfólio pessoal. O objetivo é fornecer os dados que serão consumidos pelo frontend, como projetos, tecnologias utilizadas e categorias.
 
@@ -61,23 +61,27 @@ yarn dev
 
 ### 🔹 Projetos
 
-GET | `/projetos` | Lista os 4 projetos principais que estão marcados no MongoDB como "favorit: "true"
-GET | `/projetos/todos` | Lista todos os projetos  
+GET | `/projetos` | Lista os 4 projetos principais que estão marcados no MongoDB como "favorit: true"
+<br>
+GET | `/projetos/todos` | Lista todos os projetos
+<br>
 GET | `/projetos/:id` | Detalhes completos de um projeto
+<br>
 POST | `/projetos` | Cria um novo projeto
 
-<br></br>
 
 ### 🔹 Tecnologias
 
 | GET | `/tecnologias` | Lista todas as tecnologias utilizadas na criação de cada site.
+<br>
 | POST | `/tecnologias` | Cria uma nova tecnologia (nome + imagem)
 
-<br></br>
+
 
 ### 🔹 Categorias
 
 | GET | `/categorias` | Lista todas as categorias de projeto
+<br>
 | POST | `/categorias` | Cria uma nova categoria
 
 ---
@@ -97,7 +101,7 @@ POST | `/projetos` | Cria um novo projeto
 - API estruturada em REST utilizando JSON.
 - Tempo de resposta inferior a 1 segundo em requisições comuns.
 - Código modular e limpo.
-
+  
 ---
 
 ## 🛠️ Requisitos Funcionais Atendidos
@@ -119,11 +123,6 @@ POST | `/projetos` | Cria um novo projeto
 
 ---
 
-## 📄 Construido Por
-
-Allysson Ryan
-
----
 
 ## 📫 Screenshot do fluxograma da Api
 
