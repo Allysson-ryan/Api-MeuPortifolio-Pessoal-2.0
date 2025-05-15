@@ -10,7 +10,16 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+const allowedOrigins = process.env.CORS_ORIGIN?.split(",") || [];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 app.use(routes);
 
