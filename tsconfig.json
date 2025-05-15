@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2021",
+    "target": "ES6",
     "module": "commonjs",
-    "lib": ["ES2021"],
-    "rootDir": "src",
+    "moduleResolution": "node",
     "outDir": "dist",
-    "strict": true,
+    "rootDir": ".",
     "esModuleInterop": true,
-    "skipLibCheck": true
-  }
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src", "api"]
 }

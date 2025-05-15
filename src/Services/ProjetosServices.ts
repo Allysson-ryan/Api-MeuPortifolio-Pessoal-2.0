@@ -2,7 +2,7 @@ import { Projeto } from "../Models/Projetos";
 
 export class ProjetosService {
   async listarPrincipais() {
-    return await Projeto.find().limit(4);
+    return await Projeto.find({ favorit: true }).limit(4);
   }
 
   async listarTodos() {
